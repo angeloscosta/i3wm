@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
+## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+
+DIR="$HOME/.config/"
+YTDIR="/opt/Youtube\ Music/"
+
+rofi_command="rofi -theme $DIR/rofi/themes/asuser.rasi"
+
+# Apps
+koodo="Koodo Reader"
+swall="Shuffle Wallpaper"
+editor="Sublime-Text"
+disc="Discord"
+steam="Steam"
+ytmusic="Youtube Music"
+
+# Variable passed to rofi
+options="$koodo\n$swall\n$editor\n$disc\n$ytmusic\n$steam"
+
+# Functions
+
+chosen="$(echo -e "$options" | $rofi_command -p "Run as $USER" -dmenu -selected-row 0)"
+case $chosen in
+    $koodo)
+        koodo-reader
+        ;;
+    $swall)
+        ~/.config/i3/bin/wallpaper.sh
+        ;;
+    $editor)
+        subl
+        ;;
+    $disc)
+        discord
+        ;;
+    $ytmusic)
+        youtube-music
+        ;;
+    $steam)
+        steam-native
+        ;;
+esac
+
+
