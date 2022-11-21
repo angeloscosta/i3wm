@@ -1,0 +1,25 @@
+## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
+## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+
+[color]
+BG = #f5f5f5
+BGL = #2c3038
+FG = #c8ccd4
+FGA = #808080
+SEL = #B2615A
+
+BLACK = #000000
+WHITE = #C8CCD4
+##Vermillion
+RED = #B2615A
+#RED = #e06c75
+GREEN = #98c379
+YELLOW = #e5c07b
+##BLUE = #61afef
+##Forget-Me-Not-Blue
+BLUE = #358094
+PURPLE = #c678dd
+CYAN = #56b6c2
+##ORANGE = #DA896E
+ORANGE = #B2615A
+LIGHTIVORY = #E3D3B5
